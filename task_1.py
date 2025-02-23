@@ -7,7 +7,7 @@ def total_salary(path):
             salaries = []
             for line in lines:
                 try:
-                    salaries.append(int(line.strip().split(',')[1]))
+                    salaries.append(float(line.strip().split(',')[1]))
                 except ValueError:
                     print(f'ValueError with line: {line}')
                     continue
